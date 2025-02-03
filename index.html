@@ -15,9 +15,16 @@
             background-color: #fff;
         }
 
+
+
+
+
+/* 1. 导航栏 */
+
+
         /* 导航栏 */
         nav {
-            background-color: rgba(255, 192, 203, 0.8);
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 10px 20px;
             position: fixed;
             width: 100%;
@@ -39,7 +46,7 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: rgb(255, 192, 203);
             text-decoration: none;
             font-size: 14px;
             font-weight: 500;
@@ -49,10 +56,19 @@
             opacity: 0.8;
         }
 
+
+
+
+
+
+
+/* 2. 图片1 */
+
+
         /* 头部大图 */
         header {
-            background-image: url('https://via.placeholder.com/1920x1080'); /* 替换为高质量图片 */
-            background-size: cover;
+            background-image: url('images/14.jpg'); /* 替换为高质量图片 */
+            background-size: contain; /* cover为拉伸 改contain */
             background-position: center;
             height: 100vh;
             display: flex;
@@ -144,48 +160,52 @@
 <body>
 
 
-
-    
-/* 导航栏 */
-
     <!-- 导航栏 -->
     <nav>
         <ul>
             <li><a href="#home">胡桃</a></li>
             <li><a href="#about">卡芙卡</a></li>
             <li><a href="#services">知更鸟</a></li>
-            <li><a href="#contact">我们</a></li>
+            <li><a href="#contact">以及我们</a></li>
         </ul>
     </nav>
+
+    
+
+/* 2. 图片1中不设置文字内容 */
 
     <!-- 头部大图 -->
     <header id="home">
         <div>
-            <h1>商务科技公司</h1>
-            <p>创新驱动，引领未来</p>
+            <h1></h1>
+            <p></p>
         </div>
     </header>
 
     <!-- 关于我们 -->
     <section id="about" class="section">
-        <h2>关于我们</h2>
-        <p>我们是一家致力于通过创新科技推动商业发展的公司。我们的团队由行业专家和技术精英组成，专注于为客户提供最优质的解决方案。</p>
-        <img src="https://via.placeholder.com/800x400" alt="关于我们">
+        <h2>Hello!</h2>
+        <p>有的文章就是不说人话，用一套语言体系将学术圈隔绝开来，无奈的是，不能说这是错的</p>
+        <img src="images/15.jpg" alt="">
     </section>
 
-    <!-- 服务 -->
-    <section id="services" class="section">
-        <h2>我们的服务</h2>
-        <p>我们提供全方位的商务科技服务，包括数字化转型、数据分析、人工智能解决方案等，助力企业实现高效增长。</p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
 
+
+<!-- 服务 -->
+<section id="services" class="section">
+    <h2>New Word!</h2>
+    <p>I have some knowledge of web front-end development and MMD (MikuMikuDance) creation. I've also made some game videos, enjoy watching streamers play games, and do a bit of self-media sharing. I am looking to set up my own server.</p>
+    <div class="video-container">
+        <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=991707125&bvid=BV1Ex4y1V7zE&cid=1001602748&p=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
+
+  
     <!-- 联系我们 -->
     <section id="contact" class="section">
-        <h2>联系我们</h2>
-        <p>如果您有任何问题或需要进一步的信息，请随时与我们联系。</p>
+        <h2>My name is Kally</h2>
+        <p>If you are interested in me, please feel free to contact us at any time.</p>
         <p>电话: hutao-hutao-hutao</p>
         <p>邮箱: info@hutao.com</p>
     </section>
